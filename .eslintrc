@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": ["@quero/eslint-config-vue", "@nuxtjs/eslint-config-typescript", "plugin:vuejs-accessibility/recommended", "prettier"],
+  "plugins": ["@quero/vue", "vue", "vuejs-accessibility", "prettier"],
+  "ignorePatterns": "*.d.ts",
+  "rules": {
+    "prettier/prettier": "error",
+    "vue/singleline-html-element-content-newline": "off",
+    "no-unused-vars": "off",
+    "space-before-function-paren": "off"
+  },
+  "overrides": []
+}
