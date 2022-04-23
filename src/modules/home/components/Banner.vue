@@ -3,9 +3,9 @@
     <v-carousel-item class="banner" v-for="(item, i) in slides" :key="i">
       <v-parallax :src="item.src">
         <v-container class="content">
-          <h5 class="display-1 text-upper pb-2">{{ item.content[0] }}</h5>
-          <h4 class="display-2 text-upper">{{ item.content[1] }}</h4>
-          <h4 class="display-2 text-upper">{{ item.content[2] }}</h4>
+          <h5 class="display-1 text-white text-upper pb-2">{{ item.content[0] }}</h5>
+          <h4 class="display-2 text-white text-upper">{{ item.content[1] }}</h4>
+          <h4 class="display-2 text-white text-upper">{{ item.content[2] }}</h4>
           <hr class="hr-base" />
           <v-btn outlined color="white" class="btn-banner" link to="/">Check Now</v-btn>
         </v-container>
