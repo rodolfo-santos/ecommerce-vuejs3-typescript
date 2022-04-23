@@ -1,19 +1,3 @@
-<template>
-  <v-carousel class="banner-home">
-    <v-carousel-item class="banner" v-for="(item, i) in slides" :key="i">
-      <v-parallax :src="item.src">
-        <v-container class="content">
-          <h5 class="display-1 text-white text-upper pb-2">{{ item.content[0] }}</h5>
-          <h4 class="display-2 text-white text-upper">{{ item.content[1] }}</h4>
-          <h4 class="display-2 text-white text-upper">{{ item.content[2] }}</h4>
-          <hr class="hr-base" />
-          <v-btn outlined color="white" class="btn-banner" link to="/">Check Now</v-btn>
-        </v-container>
-      </v-parallax>
-    </v-carousel-item>
-  </v-carousel>
-</template>
-
 <script lang="ts">
 export default {
   setup() {
@@ -32,6 +16,22 @@ export default {
   }
 };
 </script>
+
+<template>
+  <v-carousel class="banner-home">
+    <v-carousel-item class="banner" v-for="(item, i) in slides" :key="i">
+      <v-parallax :src="item.src">
+        <v-container class="content">
+          <h5 class="display-1 text-white text-upper pb-2">{{ item.content[0] }}</h5>
+          <h4 class="display-2 text-white text-upper">{{ item.content[1] }}</h4>
+          <h4 class="display-2 text-white text-upper">{{ item.content[2] }}</h4>
+          <hr class="hr-base" />
+          <v-btn outlined color="white" class="btn-banner" link to="/">Check Now</v-btn>
+        </v-container>
+      </v-parallax>
+    </v-carousel-item>
+  </v-carousel>
+</template>
 
 <style lang="scss" scoped>
 @import '@/sass/custom.scss';
