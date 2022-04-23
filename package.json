@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite --host",
+    "dev": "docker-compose up",
+    "vite": "vite --host",
     "serve": "vite preview",
     "build": "vite build",
     "test:unit": "vue-cli-service test:unit",
