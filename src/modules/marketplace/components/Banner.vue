@@ -34,7 +34,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import '@/sass/custom.scss';
+@import '@/styles/custom.scss';
 
 .banner-home {
   height: 100vh;

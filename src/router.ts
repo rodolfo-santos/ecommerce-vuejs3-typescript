@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import home from './modules/home/router';
+import marketplace from './modules/marketplace/router';
 
-const routes: RouteRecordRaw[] = [...home];
+const routes: RouteRecordRaw[] = [...marketplace];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
